@@ -20,13 +20,13 @@
         <referenceBlock name="skip_to_content" remove="true" />
         <referenceBlock name="form.subscribe" remove="true" />        
         <referenceBlock name="authentication-popup" remove="true"/>
-<referenceBlock name="store.links" remove="true"/>
+        <referenceBlock name="store.links" remove="true"/>
         
         <referenceContainer name="header-wrapper">
             <container name="menu-container" htmlTag="div" htmlClass="nav-container">
                 <block class="Magento\Framework\View\Element\Template" name="menu" template="Magento_Theme::html/menu.phtml"/>
             </container>
         </referenceContainer>
-        <move element="top.search" destination="menu-container" after="-"/>
+        <move element="top.search" destination="header-wrapper" after="-"/>
     </body>
 </page>

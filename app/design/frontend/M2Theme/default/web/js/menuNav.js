@@ -5,6 +5,8 @@ define([
     "use strict";
   
     var widthWindow = $(window).outerWidth();
+    var btnSearch = $('.search-toggle');
+    var btnCloseSearch = $('.close-search');
     
     if(widthWindow < 768) {
       var menuLink = $('.menu-link');
@@ -20,5 +22,13 @@ define([
         $(this).parent().parent().removeClass('active');
       })
     }
+
+    btnSearch.click(function(){
+      $('.block-search').addClass('active');
+    });
+
+    btnCloseSearch.click(function(){
+      $('.block-search').removeClass('active');
+    })
     
   });

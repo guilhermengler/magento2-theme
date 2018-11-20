@@ -12,6 +12,12 @@
 ?>
 <?php $storeName = $block->getThemeName() ? $block->getThemeName() : $block->getLogoAlt();?>
 <span data-action="toggle-nav" class="action nav-toggle"><span></span></span>
+<span class="action search-toggle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 28">
+        <path id="Rounded Rectangle 1" class="shp0" d="M27.4 23.8C28.23 24.63 28.23 25.97 27.4 26.8C26.57 27.63 25.23 27.63 24.4 26.8L17.4 19.8C17.35 19.75 17.31 19.69 17.27 19.64C13.14 22.38 7.53 21.94 3.89 18.3C-0.25 14.16 -0.25 7.44 3.9 3.3C8.04 -0.84 14.76 -0.84 18.9 3.3C22.54 6.93 22.98 12.55 20.24 16.67C20.29 16.71 20.35 16.75 20.4 16.8L27.4 23.8ZM16.28 5.93C13.58 3.23 9.22 3.23 6.52 5.93C3.83 8.62 3.83 12.99 6.52 15.68C9.21 18.37 13.58 18.37 16.27 15.68C18.97 12.98 18.97 8.62 16.28 5.93Z" />
+    </svg>
+</span>
+
 <?php if ($block->isHomePage()):?>
     <strong class="logo">
 <?php else: ?>
