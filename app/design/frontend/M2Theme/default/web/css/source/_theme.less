@@ -1,17 +1,23 @@
+.sections.nav-sections {
+    display: none;
+}
+
 // MIXINS
 
 .transform(@string){
 	-webkit-transform: @string;
 	-moz-transform: 	 @string;
 	-ms-transform: 		 @string;
-	-o-transform: 		 @string;
+    -o-transform: 		 @string;
+    transform:           @string;
 }
 
 .transition (@transition) {
 	-webkit-transition: @transition;  
 	-moz-transition:    @transition;
 	-ms-transition:     @transition; 
-	-o-transition:      @transition;  
+    -o-transition:      @transition; 
+    transition:         @transition;
 }
 
 
@@ -66,11 +72,13 @@ body {
         }
 
         &:before {
-            
+            .transform(rotate(-47deg));
+            margin-top: 9px;
         }
 
         &:after {
-            
+            .transform(rotate(46deg));
+            margin-top: -8px;
         }
     }
 }
