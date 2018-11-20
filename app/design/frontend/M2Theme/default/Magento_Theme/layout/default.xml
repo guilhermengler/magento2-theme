@@ -8,6 +8,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <remove src="calendar.css"/>
+        <css src="https://fonts.googleapis.com/css?family=Lato:300,400" src_type="url"/>
     </head>
     <body>
         <referenceBlock name="register-link" remove="true" />
@@ -16,5 +17,12 @@
         <referenceBlock name="my-account-link" remove="true" />
         <referenceBlock name="catalog.compare.link" remove="true" />
         <referenceBlock name="minicart" remove="true" />
+        <referenceBlock name="skip_to_content" remove="true" />
+        <referenceContainer name="header-wrapper">
+            <container name="menu-container" htmlTag="div" htmlClass="nav-container">
+                <block class="Magento\Framework\View\Element\Template" name="menu" template="Magento_Theme::html/menu.phtml"/>
+            </container>
+        </referenceContainer>
+        <move element="top.search" destination="menu-container" after="-"/>
     </body>
 </page>
