@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+	<widget class="Widgets\Social\Block\Widget\Samplesocial" id="widgets_social_samplesocial">
+		<label>Widget Social</label>
+		<description></description>
+		<parameters>
+			<parameter name="widgettitle" sort_order="10" visible="true" xsi:type="text">
+				<label>Title</label>
+			</parameter>
+			<parameter name="widgettwitter" sort_order="20" visible="true" xsi:type="text">
+				<label>Tiwtter</label>
+			</parameter>
+            <parameter name="widgetfacebook" sort_order="20" visible="true" xsi:type="text">
+				<label>Facebook</label>
+			</parameter>
+            <parameter name="widgetpinterest" sort_order="20" visible="true" xsi:type="text">
+				<label>Pinterest</label>
+			</parameter>
+            <parameter name="widgettgoogle" sort_order="20" visible="true" xsi:type="text">
+				<label>Google+</label>
+			</parameter>
+            <parameter name="widgetrss" sort_order="20" visible="true" xsi:type="text">
+				<label>RSS</label>
+			</parameter>
+		</parameters>
+	</widget>
+</widgets>

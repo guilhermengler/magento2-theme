@@ -398,7 +398,7 @@ body {
 .column.main {
     @media (min-width: @screen-size-md) {
         float: left;
-        width: 75%;
+        width: 70%;
         padding-right: 20px;
     }
 }
@@ -406,7 +406,7 @@ body {
 .sidebar {
     @media (min-width: @screen-size-md) {
         float: left;
-        width: 25%;
+        width: 30%;
         padding-left: 20px;
     }
 }
@@ -468,5 +468,45 @@ body {
 .continue-reading {
     @media (min-width: @screen-size-md) {
         float: right;
+    }
+}
+
+
+// WIDGET
+
+.widget {
+    margin-bottom: 20px;
+}
+
+// WIDGET SOCIAL
+
+.widget-social {
+    padding: 20px;
+
+    h2 {
+        margin-bottom: 10px;
+        font-size: 22px;
+        color: #444444;
+    }
+
+    a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+
+        &.twitter { background-color: #00b6eb }
+        &.facebook { background-color: #265d99 }
+        &.pinterest { background-color: #d2003a }
+        &.google { background-color: #3e3e3e  }
+        &.rss { background-color: #ff8e11 }
+    }
+
+    svg {
+        fill: #fff;
+        width: 17px;
+        height: 17px;
+        margin-top: 11px;
+        margin-left: 11px;
     }
 }
